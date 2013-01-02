@@ -122,7 +122,8 @@ public class FileTranscodeVirtualFolder extends VirtualFolder {
 
 			// First, add the option to simply stream the resource
 			DLNAResource justStreamed = child.clone();
-
+			addChapterFile(justStreamed);		
+			
 			RendererConfiguration renderer = null;
 
 			if (this.getParent() != null) {
